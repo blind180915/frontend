@@ -1,5 +1,5 @@
-# frontend
-frontend 개발자가 되기 위한 일일커밋, TIL
+# FrontEnd
+FrontEnd 개발자가 되기 위한 일일커밋, TIL
 
 JayJin님의 블로그를 보고 일일 커밋을 처음 알게 되었다. 실력 향상을 위해 나도 일일 커밋에 도전하기로 했다.
 
