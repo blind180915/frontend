@@ -1,0 +1,14 @@
+<!-- xml, 버전, 캐릭터 셋 -->
+<!-- 루트 element는 beans라는 element이다. -->
+<!-- 가장 바깥쪽 태그, 이것을 루트 element라고 하는데 반드시 beans로 되어있어야 한다. -->
+<!-- xml 스키마에 대한 설정도 되어있어야 한다. -->
+<!-- 해당 설정 파일을 Spring 컨테이너가 읽어 들이는데 beans 태그 안에 아무것도 없으면 아무일도 하지 않게 된다.-->
+<!-- 현재작업은 Spring 컨테이너에게 내가 사용할 객체를 대신 생성하게 하는 것이다. -->
+<!-- Spring 컨테이너는 객체를 하나만 생성해서 가지고 있다 이러한 패턴을 싱글톤 패턴이라고 한다. -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+    <!-- kr.or.connect.diexam01.UserBean userBean = new kr.or.connect.diexam01.UserBean();과 같은 의미이다. -->
+    <bean id="userBean" class="kr.or.connect.diexam01.UserBean"/>
+</beans>
