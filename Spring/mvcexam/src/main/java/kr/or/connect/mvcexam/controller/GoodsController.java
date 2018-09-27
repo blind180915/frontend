@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class GoodsController {
 	@RequestMapping(path="/goods/{id}", method=RequestMethod.GET)
-	public String getGoodsById(@PathVariable(name="id") int id, 
+	public String getGoodsById(@PathVariable(name="id") String id, 
 			@RequestHeader(value="User-Agent", defaultValue="myBrowser") String userAgent, 
 			HttpServletRequest request, ModelMap modelMap) {
 		
